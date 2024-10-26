@@ -9,7 +9,7 @@ const Search = () => {
   };
 
   return (
-    <div>
+    <div className='ser'>
       <div className={`searchbox ${isOpen ? 'open' : ''}`}>
         <input type="text" placeholder="поиска.." />
         <button className="submit" onClick={toggleSearch}>
