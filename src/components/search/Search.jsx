@@ -11,7 +11,7 @@ const Search = () => {
   return (
     <div className='ser'>
       <div className={`searchbox ${isOpen ? 'open' : ''}`}>
-        <input type="text" placeholder="поиска.." />
+        <input type="text" className=' input' placeholder="поиска.." />
         <button className="submit" onClick={toggleSearch}>
         </button>
       </div>

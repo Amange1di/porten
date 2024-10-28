@@ -75,9 +75,10 @@ header {
         }
     }
     .header-icons {
-        
+        /* margin-left: -50px; */
         display: flex;
         align-items: center;
+        margin: 20px 0;
     }
 
     .iconCard {
@@ -180,7 +181,7 @@ header {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .burger-menu {
         display: flex !important;
     }

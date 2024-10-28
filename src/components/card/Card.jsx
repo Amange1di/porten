@@ -1,18 +1,18 @@
 // Card.js
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import cardImage from "../../assets/card.png"; // Путь к изображению
+import cardImage from "../../assets/card.png"; 
 import { useNavigate } from "react-router-dom";
 import "./card.css";
 
-const baseURL = "https://jsonplaceholder.typicode.com/posts?_limit=10"; // URL для получения данных
+const baseURL = "https://jsonplaceholder.typicode.com/posts?_limit=10";
 
 const Card = ({ limit }) => {
     const navigate = useNavigate();
     const [cards, setCards] = useState([]);
 
     const truncateText = (text) => {
-        return text.split(' ').slice(0, 5).join(' ') + (text.split(' ').length > 2 ? '...' : '');
+        return text.split(' ').slice(0, 5).join(' ') + (text.split(' ').length > 2 ? '.' : '');
     };
 
     const handleClick = (id) => {
@@ -31,7 +31,7 @@ const Card = ({ limit }) => {
     useEffect(() => {
         fetchCardData();
     }, []);
-
+console.log(cards ,"---cards---")
     return (
         <div className="generalCard">
             {cards.slice(0, limit).map((card) => (
